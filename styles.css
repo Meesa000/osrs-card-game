@@ -1,0 +1,71 @@
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+}
+
+.body-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* BOARD PROPERTIES - BORDER FOR TESTING*/
+.board {
+    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black; 
+    border-radius: 3px;
+    height: 50%;
+    width: 1280px;
+}
+
+/* BOARD SPACING */
+.player-one-side {
+    /* margin-bottom: 3rem; */
+}
+
+.player-two-side {
+    /* margin-top: 3rem; */
+}
+/* CARD INFO CONTAINER*/
+.info-container {
+    display: flex;
+    text-align: center;
+ 
+    
+}
+
+/* CARD/PLAYER INFORMATION */
+ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+    
+
+}
+.attk-btn-container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 1280px;
+    
+}
+
+/* CARD CONTAINER */
+.card-container {
+    border-right: solid 2px black;
+    border-left: solid 2px black;
+    border-radius: 0px;
+    padding: 3.5rem;
+    
+    
+}
+
