@@ -31,7 +31,7 @@ body{
     border: 2px solid black; 
     border-radius: 3px;
     height: 50%;
-    width: 100%;
+    width: 1920px;
     
 }
 
@@ -56,16 +56,18 @@ ul {
 }
 .attk-btn-container {
     margin: 0;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1280px;
     height: 40px;
     
 }
 
 .attk-btn {
-    
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
 }
 
 /* CARD CONTAINER */
@@ -77,6 +79,7 @@ ul {
     border-left: solid 2px black;
     border-radius: 0px;
     padding: 3.5rem;
+    
  
     
     
