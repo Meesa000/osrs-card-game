@@ -11,6 +11,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    zoom: 75%;
 }
 
 /* HEADER */
@@ -21,17 +22,31 @@ body{
 }
 /* BOARD PROPERTIES - BORDER FOR TESTING*/
 .board {
-    background-color: #282828;
+    /* background-color: #282828; */
     display: flex;
     justify-content: center;
     gap: 20px;
     align-items: center;
-    border: 2px solid black; 
+    /* border: 2px solid black;  */
     border-radius: 3px;
-    height: 50%;
-    width: 1920px;
+    width: 1500px;
     
 }
+
+.player-one-side {
+    border-bottom: 4px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    
+}
+
+.player-two-side {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+
 
 
 /* CARD INFO CONTAINER*/
@@ -42,7 +57,7 @@ body{
     align-items: flex-start;
     text-align: center;
     height: 300px;
-    width: 1000px;
+    width: 700px;
 
     
 }
@@ -77,15 +92,17 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: solid 2px black;
-    border-left: solid 2px black;
+
     border-radius: 0px;
     padding: 4rem;
     vertical-align: top;
     
 }
 
-.card-container:hover {
-    opacity: 0.4;
+
+
+.board:hover {
+        opacity: 0.4;
+        
 }
 

@@ -1,37 +1,39 @@
 // cards
 let cards = [
     {
-    src: 'IMAGES/banana.jpeg',
-    name: 'WISE OLD MAN',
-    attack: 1,
-    defence: 1
+        src: 'IMAGES/130px-Wise_Old_Man.webp',
+        name: 'THE WISE OLD MAN',
+        attack: 1,
+        defence: 1
+    },
+
+    {
+        src: 'IMAGES/banana.jpeg',
+        name: 'BANANA',
+        attack: 0,
+        defence: 0
     }
 ];
 
+let enemyInfoContainer = document.querySelector('.info-container.enemy');
 
-console.log(cards[0].name);
-console.log(cards[0].attack);
-console.log(cards[0].defense)
+// get enemy card name
+let enemyCardName = document.querySelector('.card-name.enemy');
+//get enemy attack
+let enemyAtkStat = document.querySelector('.attack-stat.enemy');
+//get enemy defence
+let enemyDefStat = document.querySelector('.defence-stat.enemy');
 
-// get player card name
-let playerCardName = document.querySelector('.card-name.player');
-//  get the player attack stat html item
-let playerAttack = document.querySelector('.attack-stat');
 
-// get the player defence stat
-let playerDefence = document.querySelector('.defence-stat');
+// when user clicks enemy info container, run enemy info display function
+console.log(enemyCardName);
+enemyInfoContainer.onclick = enemyInfoDisplay;
 
-// player-two container is the player card - when this is clicked, console.log
-let PlayerCardContainer = document.querySelector('.player-two'); // index 0 is enemy player, index 1 is human player
-console.log(PlayerCardContainer)
-PlayerCardContainer.onclick = PlayerCardClick;
+function enemyInfoDisplay() {
+    console.log('Enemy card was clicked.');
+    enemyCardName.textContent = 'CARD: ' + cards[0].name;
+    enemyAtkStat.textContent = `ATTACK: ` + cards[0].attack;
+    enemyDefStat.textContent = 'DEFENCE: ' + cards[0].defence;
 
-function PlayerCardClick() {
-    console.log('Player card was clicked.')
-    console.log(PlayerCardContainer)
-    playerCardName.textContent = 'CARD: ' + cards[0].name;
-    playerAttack.textContent = 'ATTACK: ' + cards[0].attack;
-    playerDefence.textContent = 'DEFENCE: ' + cards[0].defence;
 }
-
 
